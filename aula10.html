@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="aula10.js"></script>
+    <style>
+        div#area{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+        }
+
+        div#res{
+            margin-top: 15px;
+        }
+
+        div#soma{
+            border: 2px solid;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area" onmouseenter="">
+        interaja
+    </div>
+
+    <div id="soma">
+        <h3>Somando</h3>
+        <input type="number"  id="number1"> +
+        <input type="number"  id="number2"> =
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="res">
+            Resultado
+        </div>
+    </div>
+
+
+
+    <script>
+
+        
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mousedown', clicando)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function sair() {
+            a.innerText = 'saiu'
+            a.style.background = 'green'
+        }
+
+
+        function entrar (){
+            a.innerText = 'entrou'
+        }
+
+        function clicando(){
+            a.innerText ='clicando'
+            a.style.background = 'blue'
+        }
+
+        function clicar(){
+            a.innerHTML = 'clicou'
+            a.style.background = 'red'
+        }
+
+
+    </script>
+</body>
+</html>
