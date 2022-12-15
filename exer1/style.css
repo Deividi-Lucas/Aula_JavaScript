@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+
+}
+
+section{
+    height: 300px;
+    position: relative;
+    justify-content: center;
+    border-radius: 15px;
+    }
+
+h1, p,h5, .msg {
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    font-size: 20px;
+}
+
+div {
+    padding: 1px;
+}
